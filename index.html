@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт с Играми</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Сайт с Играми</h1>
+            <p>Выберите игру и начните играть!</p>
+        </header>
+
+        <div class="games-grid">
+            <div class="game-card" onclick="loadGame('2048')">
+                <h3>2048</h3>
+                <p>Головоломка с цифрами</p>
+                <span class="difficulty">Средний уровень</span>
+            </div>
+
+            <div class="game-card" onclick="loadGame('snake')">
+                <h3>🐍 Snake</h3>
+                <p>Классическая змейка</p>
+                <span class="difficulty">Простой</span>
+            </div>
+
+            <div class="game-card" onclick="loadGame('tictactoe')">
+                <h3>❌ Tic-Tac-Toe</h3>
+                <p>Крестики-нолики</p>
+                <span class="difficulty">Простой</span>
+            </div>
+
+            <div class="game-card" onclick="loadGame('memory')">
+                <h3>🧠 Memory Game</h3>
+                <p>Игра на память</p>
+                <span class="difficulty">Простой</span>
+            </div>
+
+            <div class="game-card" onclick="loadGame('flappybird')">
+                <h3>🐦 Flappy Bird</h3>
+                <p>Летай между трубами</p>
+                <span class="difficulty">Сложный</span>
+            </div>
+
+            <div class="game-card" onclick="loadGame('pong')">
+                <h3>🏓 Pong</h3>
+                <p>Классический понг</p>
+                <span class="difficulty">Средний уровень</span>
+            </div>
+
+            <div class="game-card" onclick="loadGame('breakout')">
+                <h3>🧱 Breakout</h3>
+                <p>Разбей кирпичи</p>
+                <span class="difficulty">Средний уровень</span>
+            </div>
+
+            <div class="game-card" onclick="loadGame('tetris')">
+                <h3>🟦 Tetris</h3>
+                <p>Падающие блоки</p>
+                <span class="difficulty">Сложный</span>
+            </div>
+
+            <div class="game-card" onclick="loadGame('minesweeper')">
+                <h3>💣 Minesweeper</h3>
+                <p>Поиск мин</p>
+                <span class="difficulty">Средний уровень</span>
+            </div>
+
+            <div class="game-card" onclick="loadGame('simon')">
+                <h3>🎨 Simon Says</h3>
+                <p>Повтори последовательность</p>
+                <span class="difficulty">Простой</span>
+            </div>
+
+            <div class="game-card" onclick="loadGame('pacman')">
+                <h3>👻 Pac-Man</h3>
+                <p>Классический Пак-Мэн</p>
+                <span class="difficulty">Средний уровень</span>
+            </div>
+
+            <div class="game-card" onclick="loadGame('hangman')">
+                <h3>🎯 Hangman</h3>
+                <p>Виселица - угадай слово</p>
+                <span class="difficulty">Простой</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="gameContainer" class="game-container hidden">
+        <button class="close-btn" onclick="closeGame()">✕ Закрыть</button>
+        <div id="gameContent"></div>
+    </div>
+
+    <script src="games/2048.js"></script>
+    <script src="games/snake.js"></script>
+    <script src="games/tictactoe.js"></script>
+    <script src="games/memory.js"></script>
+    <script src="games/flappybird.js"></script>
+    <script src="games/pong.js"></script>
+    <script src="games/breakout.js"></script>
+    <script src="games/tetris.js"></script>
+    <script src="games/minesweeper.js"></script>
+    <script src="games/simon.js"></script>
+    <script src="games/pacman.js"></script>
+    <script src="games/hangman.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
